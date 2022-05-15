@@ -1,0 +1,33 @@
+package model;
+
+public class StopWatch {
+	
+	private long startTime = 0;
+    private long stopTime = 0;
+
+    public StopWatch()
+    {
+          startTime = System.currentTimeMillis();
+    }
+
+    public void start() {
+      startTime = System.currentTimeMillis();
+    }
+
+    public void stop() {
+      stopTime = System.currentTimeMillis();
+      System.out.println("StopWatch: " + getElapsedTime() + " milliseconds.");
+      System.out.println("StopWatch: " + getElapsedTimeSecs() + " seconds.");
+    }
+
+	private String getElapsedTimeSecs() {
+		return null;
+	}
+
+	private String getElapsedTime() {
+		return null;
+	}
+
+	
+
+}
